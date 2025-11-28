@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RISM | Early Bird Pre-Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="rism-navbar">
+  <div class="nav-left">
+    <img class="nav-logo" 
+         src="https://upload.wikimedia.org/wikipedia/en/5/5a/Ramaiah_Institutions_Logo.png" 
+         alt="Ramaiah Logo" />
+
+    <div class="nav-title-block">
+      <div class="nav-rism">RISM-Ramaiah Institute of Science & Management</div>
+      <div class="nav-full">Greenfield STEM University</div>
+    </div>
+  </div>
+
+  <div class="nav-tag">
+    <span class="bullet"></span>
+    <span>Pre-Registration · Early Bird Interest</span>
+  </div>
+</nav>
+<!-- <div class="legacy-title">Our Legacy</div> -->
+
+
+<!-- BACKGROUND VIDEO -->
+<!-- BACKGROUND VIDEO -->
+<div class="video-background">
+  <div class="video-overlay"></div>
+<div class="legacy-text">Our Legacy</div>
+
+  <div class="video-foreground">
+    <iframe 
+      id="bgVideo"
+      src="https://www.youtube.com/embed/SWz9ytNqyO4?autoplay=1&mute=1&controls=0&loop=1&playlist=SWz9ytNqyO4&modestbranding=1&showinfo=0&enablejsapi=1"
+      frameborder="0"
+      allow="autoplay"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- CORRECTLY PLACED UNMUTE BUTTON -->
+  
+</div>
+
+<button id="soundToggleBtn" class="unmute-btn">🔊 Enable Sound</button>
+
+
+<!-- FORM MAIN AREA -->
+<main class="page-wrap">
+
+  <section class="form-card">
+    <button id="toggleForm" class="toggle-form-btn">− Minimize the form</button>
+
+    <div class="form-title">
+      <span>WELCOME - Tell us you’re interested 👇</span>
+    </div>
+
+    <p class="form-sub">
+      Note: This is not a formal admission form. It simply lets the RISM team
+      connect with you before everyone else.
+    </p>
+
+    <form id="preRegForm">
+
+      <!-- Name + City -->
+      <div class="field-row">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" placeholder="Bengaluru, Chennai, ..." />
+        </div>
+      </div>
+
+      <!-- Email + Phone -->
+      <div class="field-row">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="phone">Mobile Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX" required />
+        </div>
+      </div>
+
+      <!-- Level -->
+      <div class="field">
+        <label for="level">Choose your level</label>
+        <select id="level" name="level" required>
+          <option value="">Select one</option>
+          <option value="UG">Undergraduate (UG)</option>
+          <option value="PG">Postgraduate (PG)</option>
+          <option value="PhD">PhD / Doctoral</option>
+        </select>
+      </div>
+
+      <!-- Program -->
+      <div class="field">
+        <label for="program">Program(s) you’re curious about</label>
+        <select id="program" name="program" required>
+          <option value="">Select a level first</option>
+        </select>
+      </div>
+
+      <!-- Grade + Mode -->
+      <div class="field-row">
+        <div class="field">
+          <label id="gradeLabel" for="grade">Qualification Status</label>
+          <select id="grade" name="grade" required>
+            <option value="">Select a level first</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mode">How would you like us to connect?</label>
+          <select id="mode" name="mode">
+            <option value="">Select one</option>
+            <option>Call</option>
+            <option>WhatsApp</option>
+            <option>Email</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Employment (PhD only) -->
+      <div class="field" id="employmentField" style="display: none;">
+        <label for="employment">Are you currently employed?</label>
+        <select id="employment" name="employment">
+          <option value="">Select one</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <!-- Nationality -->
+      <div class="field">
+        <label for="nationality">Nationality</label>
+        <select id="nationality" name="nationality" required>
+          <option value="">Select one</option>
+          <option>Indian</option>
+          <option>NRI</option>
+          <option>OCI</option>
+          <option>International</option>
+        </select>
+      </div>
+
+      <!-- STATE (Indians only) -->
+      <div class="field" id="stateField" style="display:none;">
+        <label for="state">State</label>
+        <select id="state" name="state"></select>
+      </div>
+
+      <!-- COUNTRY (International / NRI / OCI) -->
+      <div class="field" id="countryField" style="display:none;">
+        <label for="country">Country of Residence</label>
+        <select id="country" name="country"></select>
+      </div>
+
+      <!-- How did you hear -->
+      <div class="field">
+        <label for="hear">How did you hear about RISM?</label>
+        <select id="hear" name="hear">
+          <option value="">Choose one</option>
+          <option>School / College counsellor</option>
+          <option>Ramaiah campus visit / event</option>
+          <option>Instagram / Social media</option>
+          <option>Family / Friends</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Questions -->
+      <div class="field">
+        <label for="questions">Anything you want to ask us?</label>
+        <textarea id="questions" name="questions" placeholder="Tell us what you’re looking for in your dream institute…"></textarea>
+      </div>
+
+      <div class="helper">
+        After you submit, our admissions team will reach out with program details,
+        timelines and next steps.
+      </div>
+
+      <div class="cta-row">
+        <button type="submit" class="btn-primary">
+          Submit Interest
+        </button>
+      </div>
+
+      <div class="fine-print">
+        By submitting, you agree to be contacted by the <br>
+        <span>Ramaiah Institute of Science &amp; Management</span> <br>team.
+       
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
