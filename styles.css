@@ -57,16 +57,16 @@ body {
 .nav-title-block {
   display: flex;
   flex-direction: column;
-  color: #fff;
-  line-height: 1.15;
+  color: #07de2b;
+  line-height: 1.15;  
 }
 
 .nav-rism {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   color: #efecec;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.09em;
 
 }
 
@@ -83,7 +83,7 @@ body {
   gap: 7px;
   padding: 6px 14px;
   font-size: 11px;
-color: #e9e0e0;
+color: #ebf5ed;
   text-transform: uppercase;
   letter-spacing: 0.12em;
 
@@ -131,7 +131,7 @@ color: #e9e0e0;
   }
 
   .nav-logo {
-    height: 48px;
+    height: 52px;
   }
 
   .nav-title-block {
@@ -139,7 +139,7 @@ color: #e9e0e0;
   }
 
   .nav-rism {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .nav-full {
@@ -183,7 +183,7 @@ body {
 }
 
 .rism-logo {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 700;
   margin-top: 15px;
 }
@@ -432,7 +432,7 @@ input, select, textarea {
 --------------------------------------------------- */
 .form-card.collapsed {
   height: 60px !important;
-  width: 360px !important;
+  width: 300px !important;
   position: fixed !important;
   bottom: 20px;
   right: 20px;
