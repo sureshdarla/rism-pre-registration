@@ -339,7 +339,7 @@ input, select, textarea {
       135deg,
       rgba(58, 29, 100, 0.9),   /* Purple */
       rgba(157, 29, 89, 0.5),   /* Pink */
-      rgba(222, 63, 15, 0.7)      /* Orange */
+      rgba(222, 63, 15, 0.32)      /* Orange */
     );
 
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -699,3 +699,4 @@ input, select, textarea {
   transform: translateY(-1px);
   color: #ffffff;
 }
+
