@@ -1,4 +1,5 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbzOC-oJnDyiFiRUUAFpelb_WCaCeTlnvBLu_WZ4eLyhF8HRrNGve0Jes6Wi2UvW5zm_/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbx1Q_df69a0702oVDnc8E0mUQYsz37wpZ2qj52Z14CfT0axedjLOz-ehMq1tdaW2nTd/exec";
+
 
 // Load YouTube Iframe API
 var tag = document.createElement('script');
@@ -206,22 +207,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     // --- ⭐ END FIX ⭐ ---
 
-    const formData = {
-      name: document.getElementById("name").value,
-      city: document.getElementById("city").value,
-      email: document.getElementById("email").value,
-      phone: document.getElementById("phone").value,
-      level: levelSelect.value,
-      program: programSelect.value,
-      grade: gradeSelect.value,
-      employment: document.getElementById("employment")?.value || "",
-      nationality: currentNationality,
-      state: submissionState,      // Now correctly uses the determined value
-      country: submissionCountry, // Now correctly uses the determined value
-      mode: document.getElementById("mode").value,
-      hear: document.getElementById("hear").value,
-      questions: document.getElementById("questions").value
-    };
+const formData = {
+  name: document.getElementById("name").value,
+  city: document.getElementById("city").value,
+  gender: document.getElementById("gender").value,   // ⭐ NEW FIELD
+  email: document.getElementById("email").value,
+  phone: document.getElementById("phone").value,
+  level: levelSelect.value,
+  program: programSelect.value,
+  grade: gradeSelect.value,
+  employment: document.getElementById("employment")?.value || "",
+  nationality: currentNationality,
+  state: submissionState,
+  country: submissionCountry,
+  mode: document.getElementById("mode").value,
+  hear: document.getElementById("hear").value,
+  questions: document.getElementById("questions").value
+};
+
 
     console.log("Submitting:", formData);
 
