@@ -28,24 +28,25 @@ function onPlayerReady() {
 ---------------------------------------- */
 const PROGRAM_OPTIONS = {
   UG: [
-    "B.Tech – Computer Science and Artificial Intelligence",
-    "B.Tech – Electrical Sciences",
+    "B.Tech – Computer Science Engineering (Artificial Intelligence)",
+    "B.Tech – Electrical Engineering",
     "B.Tech – Aerospace Engineering",
-    "BBA – Business Adminstration",
+    "BBA – Business Adminstration ",
     "Not sure yet / Just exploring"
   ],
   PG: [
-    "M.Tech – Computer Science and Artificial Intelligence",
-    "M.Tech – Electrical Sciences",
-    "M.Tech – Aerospace Engineering",
+    // "M.Tech – Computer Science and Artificial Intelligence",
+    // "M.Tech – Electrical Sciences",
+    // "M.Tech – Aerospace Engineering",
     "MBA – Business Adminstration"
-  ],
-  PhD: [
-    "PhD – Business Adminstration",
-    "PhD – Electrical Sciences",
-    "PhD – Computer Science and Artificial Intelligence",
-    "PhD – Aerospace Engineering"
   ]
+  // ,
+  // PhD: [
+  //   "PhD – Business Adminstration",
+  //   "PhD – Electrical Sciences",
+  //   "PhD – Computer Science and Artificial Intelligence",
+  //   "PhD – Aerospace Engineering"
+  // ]
 };
 
 /* ----------------------------------------
@@ -301,5 +302,6 @@ setTimeout(() => {
   nationalitySelect.dispatchEvent(new Event("change"));
   console.log("Nationality logic initialized");
 }, 200);
+
 
 });
