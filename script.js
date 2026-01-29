@@ -28,17 +28,17 @@ function onPlayerReady() {
 ---------------------------------------- */
 const PROGRAM_OPTIONS = {
   UG: [
-    "B.Tech – Computer Science Engineering (Artificial Intelligence)",
-    "B.Tech – Electrical Engineering",
+    "B.Tech – Computer Science & Artificial Intelligence",
+    "B.Tech – Electrical Sciences",
     "B.Tech – Aerospace Engineering",
-    "BBA – Business Adminstration ",
+    "Bachelors of Business Adminstration - BBA(Hons) ",
     "Not sure yet / Just exploring"
   ],
   PG: [
     // "M.Tech – Computer Science and Artificial Intelligence",
     // "M.Tech – Electrical Sciences",
     // "M.Tech – Aerospace Engineering",
-    "MBA – Business Adminstration"
+    "Master of Business Adminstration - MBA"
   ]
   // ,
   // PhD: [
@@ -305,3 +305,4 @@ setTimeout(() => {
 
 
 });
+
